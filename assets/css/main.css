@@ -3423,7 +3423,7 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			font-size: 3.25em;
+			/* font-size: 3.25em; */
 		}
 
 		#banner > .inner {
@@ -3949,4 +3949,23 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+
+		/* Untuk layar menengah (tablet) */
+		@media (max-width: 1024px) and (min-width: 737px) {
+			.font_header {
+				font-size: 2em !important;
+				margin-top: 30rem !important;
+			}
+		}
+		
+		/* Untuk layar kecil (ponsel) */
+		@media (max-width: 767px) {
+			.font_header {
+				font-size: 2em !important; /* Ukuran font lebih kecil untuk ponsel */
+				text-align: center !important; /* Bisa juga tambahkan centering */
+			}
+			.major {
+				margin-top: 0 !important;
+			}
 		}
