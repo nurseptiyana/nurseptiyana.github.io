@@ -11,6 +11,107 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.container {
+				max-width: 1200px;
+				margin: 30px auto;
+				padding: 20px;
+				/* background-color: #f7f7f7; */
+			}
+	
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 20px;
+			}
+	
+			.skill-card {
+				background-color: #ffffff;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				padding: 30px;
+				transition: transform 0.3s ease;
+			}
+	
+			.skill-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			}
+	
+			.skill-icon {
+				font-size: 40px;
+				color: #3498db;
+				margin-bottom: 20px;
+			}
+	
+			.skill-title {
+				font-size: 1.5rem;
+				margin-bottom: 10px;
+				/* color: #2c3e50; */
+				color: black;
+				font-weight: bold;
+			}
+	
+			.skill-description {
+				font-size: 1rem;
+				/* color: #7f8c8d; */
+				color: black;
+			}
+
+			.skills-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+			margin-bottom: 20px;
+        }
+
+        .skill-box {
+            /* background: linear-gradient(135deg, #3498db, #8e44ad); */
+			background: white;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            width: 120px;
+			height: 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-box:hover {
+            transform: scale(1.05);
+            border: 2px solid #8e44ad;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-icon {
+            font-size: 50px;
+            margin-bottom: 1px;
+        }
+
+        .skill-titles {
+            font-size: 1rem;
+            font-weight: bold;
+			color: black;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .skill-box {
+                width: 100%;
+            }
+        }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -25,92 +126,126 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner" class="major" style="margin-bottom: 1px;margin-top: 3rem;">
+					<section id="banner" class="major" style="margin-bottom: 1px;margin-top: 5rem; margin-bottom: 5rem;">
 						<div class="inner">
 							<header class="major">
 								<div class="row" style="display: flex; align-items: flex-end; justify-content: space-between;">									
 									<h1 class="col" style="margin-bottom: 1rem;padding-left: 0;">Hello, I am Nur Kholifah Septiyana</h1>
-									<img class="col" src="images/cahayanur.png" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">								
+									<img class="col" src="images/nurz.png" style="height: 200px;">								
 								</div>
 							</header>
 							<div class="content">
-								<p style="text-align: justify;text-transform: none;font-size: 13px;">
+								<p style="text-align: justify;text-transform: none;font-size: 17px;">
 									I bring a results-driven approach to data analysis, deeply rooted in my professional journey. My 2 years of experience in data
 									operations at PT Pitjarus Teknologi provided me with a foundational understanding of the FMCG sector, where my analytical skills
 									allowed me to streamline data processes and enhance client satisfaction. By leveraging a combination of advanced analytical
 									techniques using tools like MySQL, I have contributed to optimizing data workflows and ensuring data integrity, which resulted in
 									improved response times for stakeholder requests. Known for my responsiveness and attention to detail, I ensure that my insights
 									are communicated clearly and effectively, fostering collaboration across teams. By harnessing my strengths in data analysis and
-									problem-solving, I am dedicated to driving impactful business decisions and supporting organizational growth
+									problem-solving, I am dedicated to driving impactful business decisions and supporting organizational growth.
 								</p>
 							</div>
 							<ul class="actions">
 								<li><button><a href="https://drive.google.com/file/d/1ZXZouaLNSkvc6pkhY55x_-RRSEae_pbt/view?usp=sharing" target="_blank" class="link" style="text-decoration: none;border-bottom: none !important;">Download CV</a></button></li>
-								<li><a href="#one" class="button next scrolly">See More</a></li>
+								<li><a href="#one" class="button next scrolly">See My Projects</a></li>
 							</ul>
 						</div>
 					</section>
 
-
-
-					<div class="inner">
-						<h2 style="margin-bottom: 0;">Working Experiences</h2>
-
-						<div class="content">
-							<h3 style="margin-bottom: 0;">PT Pitjarus Teknologi</h3>
-							<h5>Data Operational Support (January, 2023 - Present)</h5>
-							<p style="text-align: justify;text-transform: none;font-size: 13px;">
-								<ul>
-									<li>Executed up to 20 daily data requests using MySQL, optimizing data flows while maintaining accuracy and integrity, which resulted in
-										improved response times and 100% completion within one business day, ensuring timely delivery to stakeholders.</li>
-									<li>Analyzed non-tally data to troubleshoot discrepancies and implemented preventive solutions, safeguarding the company from financial
-										losses due to system misalignment and enhancing overall data quality.</li>
-									<li>Implemented preventive system maintenance and real-time troubleshooting, adhering to a 15-minute response time to operational
-										issues, ensuring data flow continuity and minimizing disruptions across multiple platforms.</li>
-									<li>Collaborated with cross-functional teams to ensure data consistency and seamless integration between 2 websites and 5 applications,
-										facilitating effective decision-making and reducing operational risks from data discrepancies.</li>
-								  </ul>
-							</p>
-							<h3 style="margin-bottom: 0;">Bimbel Taman Edukasi</h3>
-							<h5>Math Tutor (January, 2018 – March, 2023)</h5>
-							<p style="text-align: justify;text-transform: none;font-size: 13px;">
-								<ul>
-									<li>Implemented personalized instruction based on individual student assessments, resulting in increased student confidence and
-										engagement in learning. Students reported a heightened interest in mathematics, contributing to a more dynamic classroom
-										environment.</li>
-									<li>Enhanced overall class performance through innovative teaching methods, leading to more than 50 students achieving higher grades
-										in standardized math assessments. This significant improvement bolstered the reputation of Bimbel Taman Edukasi as an effective
-										educational institution.</li>
-								  </ul>
-							</p>
-						</div>
-					</div>
-
-					<div class="inner">
-						<h2 style="margin: 0;">Education</h2>
-
-						<div class="content">
-							<div class="row">
-								<img class="col" src="images/logo_revou.png" style="width: 100px; height: 100px;">
-								<h3 class="col" style="margin-bottom: 0;"> RevoU</h3>
+					<div style="background-color:rgb(21, 29, 85);">
+						<div class="inner">
+							<h2 style="margin-bottom: 0;">Working Experiences</h2>
+	
+							<div class="content">
+								<div style="box-shadow: inset 0 0 0 2px #ffffff; padding: 20px; border-radius: 10px;">
+									<div class="row" style="margin-bottom: 0; display: flex; align-items: center;">
+										<div class="col" style="margin-top: 5px">
+											<img src="images/logo_pitjarus_2020.svg" alt="Icon" style="width: 50px; height: 50px; background-color: white; border-radius: 50%;">
+										</div>
+										<div  class="col" >
+											<h4 style="margin-bottom: 0; margin-top: 0;">PT Pitjarus Teknologi</h4>
+										</div>
+									</div>
+									<h5 style="margin-bottom: 0; margin-top: 0;">Data Operational Support (January, 2023 - Present)</h5>
+	
+										<ul style="text-align: justify;text-transform: none;font-size: 17px;">
+											<li>Executed up to 20 daily data requests using MySQL, optimizing data flows while maintaining accuracy and integrity, which resulted in
+												improved response times and 100% completion within one business day, ensuring timely delivery to stakeholders.</li>
+											<li>Analyzed non-tally data to troubleshoot discrepancies and implemented preventive solutions, safeguarding the company from financial
+												losses due to system misalignment and enhancing overall data quality.</li>
+											<li>Implemented preventive system maintenance and real-time troubleshooting, adhering to a 15-minute response time to operational
+												issues, ensuring data flow continuity and minimizing disruptions across multiple platforms.</li>
+											<li>Collaborated with cross-functional teams to ensure data consistency and seamless integration between 2 websites and 5 applications,
+												facilitating effective decision-making and reducing operational risks from data discrepancies.</li>
+										</ul>	
+								</div>
+								<br>
+								<div style="box-shadow: inset 0 0 0 2px #ffffff; padding: 20px; border-radius: 10px;">
+									<div class="row" style="margin-bottom: 0; display: flex; align-items: center;">
+										<div class="col" style="margin-top: 5px">
+											<img src="images/logo_bimbel.png" alt="Icon" style="width: 50px; height: 50px; background-color: white; border-radius: 50%;">
+										</div>
+										<div  class="col" >
+											<h4 style="margin-bottom: 0; margin-top: 0;">Bimbel Taman Edukasi</h4>
+										</div>
+									</div>		
+									<h5>Math Tutor (January, 2018 – March, 2023)</h5>
+										<ul style="text-align: justify;text-transform: none;font-size: 17px;">
+											<li>Implemented personalized instruction based on individual student assessments, resulting in increased student confidence and
+												engagement in learning. Students reported a heightened interest in mathematics, contributing to a more dynamic classroom
+												environment.</li>
+											<li>Enhanced overall class performance through innovative teaching methods, leading to more than 50 students achieving higher grades
+												in standardized math assessments. This significant improvement bolstered the reputation of Bimbel Taman Edukasi as an effective
+												educational institution.</li>
+										</ul>
+								</div>
 							</div>
-							<h5 style="margin-bottom: 0;">Fullstack Data Analytics (May – September, 2024)</h5>
-							<h5 style="margin-bottom: 0;">Grade: 100/100</h5>
-							<p style="text-align: justify;text-transform: none;font-size: 13px;">
-								During a 13-week online bootcamp, I gained essential skills in data analytics, including business problem identification, data preparation
-								and exploration, advanced SQL, Python for data analysis, and data visualization with Tableau. Furthermore, I enhanced my ability to
-								communicate data-driven insights effectively and leverage AI for data analysis.		
-							</p>
-							<h3 style="margin-bottom: 0;"> <img class="col" src="images/Logo_unj.png" style="width: 30px; height: 30px; object-fit: cover;"> Universitas Negeri Jakarta</h3>
-							<h5 style="margin-bottom: 0;">Bachelor of Mathematics Education (August, 2017 – November, 2022)</h5>
-							<h5 style="margin-bottom: 0;">GPA: 3.54/4.00</h5>
-							<p style="text-align: justify;text-transform: none;font-size: 13px;">
-								<b>Final Project:</b> The Effect of Probing Prompting Learning to Student’s Mathematical Connection Ability at SMP Negeri 209 Jakarta.
-								(Using validity and reliability testing, normality, homogeneity, and mean difference, data collecting method, data analysis, hypothesis, and
-								the magnitude of the effect of the model).
-							</p>
+						</div>
+	
+						<div class="inner" style="padding-top: 0;">
+							<h2 style="margin: 0;">Educations</h2>
+
+							<div class="content">
+								<div style="box-shadow: inset 0 0 0 2px #ffffff; padding: 20px; border-radius: 10px;">
+									<div class="row" style="margin-bottom: 0; display: flex; align-items: center;">
+										<div class="col" style="margin-top: 5px">
+											<img src="images/logo_revou.png" alt="Icon" style="width: 50px; height: 50px;">
+										</div>
+										<div  class="col" >
+											<h4 style="margin-bottom: 0; margin-top: 0;">RevoU</h4>
+										</div>
+									</div>
+									<h5 style="margin-bottom: 0;">Fullstack Data Analytics (May – September, 2024)</h5>
+									<h5 style="margin-bottom: 0;">Grade: 100/100</h5>
+									<p style="text-align: justify;text-transform: none;font-size: 17px;">
+										During a 13-week online bootcamp, I gained essential skills in data analytics, including business problem identification, data preparation
+										and exploration, advanced SQL, Python for data analysis, and data visualization with Tableau. Furthermore, I enhanced my ability to
+										communicate data-driven insights effectively and leverage AI for data analysis.		
+									</p>
+								</div>
+								<br>
+								<div style="box-shadow: inset 0 0 0 2px #ffffff; padding: 20px; border-radius: 10px;">
+									<div class="row" style="margin-bottom: 0; display: flex; align-items: center;">
+										<div class="col" style="margin-top: 5px">
+											<img src="images/Logo_unj.png" alt="Icon" style="width: 50px; height: 50px;">
+										</div>
+										<div  class="col" >
+											<h4 style="margin-bottom: 0; margin-top: 0;">Universitas Negeri Jakarta</h4>
+										</div>
+									</div>
+	
+									<h5 style="margin-bottom: 0;">Bachelor of Mathematics Education (August, 2017 – November, 2022)</h5>
+									<h5 style="margin-bottom: 0;">GPA: 3.54/4.00</h5>
+									<p style="text-align: justify;text-transform: none;font-size: 17px;">
+										<b>Final Project:</b> The Effect of Probing Prompting Learning to Student’s Mathematical Connection Ability at SMP Negeri 209 Jakarta.
+										(Using validity and reliability testing, normality, homogeneity, and mean difference, data collecting method, data analysis, hypothesis, and
+										the magnitude of the effect of the model).
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
+					
 				<!-- Main -->
 					<div id="main">
 
@@ -190,9 +325,102 @@
 								</article>
 							</section>
 
-							</section>
-
 					</div>
+
+				<!-- Skills -->
+				 <div style="background: rgb(80, 104, 133);">
+					<div class="container">
+						<h2 style="color: white !important;">Soft Skills</h1>
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">🤝</div>
+								<div class="skill-title">Teamwork</div>
+								<div class="skill-description">Collaborating effectively with others to achieve a common goal.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">💡</div>
+								<div class="skill-title">Problem Solving</div>
+								<div class="skill-description">Finding creative solutions to overcome obstacles and challenges.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">📣</div>
+								<div class="skill-title">Communication</div>
+								<div class="skill-description">Clearly conveying ideas and information in written and verbal formats.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">⏳</div>
+								<div class="skill-title">Time Management</div>
+								<div class="skill-description">Efficiently managing your time to maximize productivity.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">⚖️</div>
+								<div class="skill-title">Adaptability</div>
+								<div class="skill-description">Adjusting to new situations and environments with flexibility.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🧠</div>
+								<div class="skill-title">Critical Thinking</div>
+								<div class="skill-description">Analyzing information objectively and making reasoned judgments.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">⚖️</div>
+								<div class="skill-title">Adaptability</div>
+								<div class="skill-description">Adjusting to new situations and environments with flexibility.</div>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🧠</div>
+								<div class="skill-title">Critical Thinking</div>
+								<div class="skill-description">Analyzing information objectively and making reasoned judgments.</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="container" style="border-top: 2px black solid;">
+						<h2 style="color: white !important;">Hard Skills</h2>
+						<div class="skills-flex">
+							<div class="skill-box" >
+								<!-- <div class="skill-icon">💻</div> -->
+								<img src="images/sheet.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Spreadsheet</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">🖥️</div> -->
+								<img src="images/mysql.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">MySQL</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">📊</div> -->
+								<img src="images/tableau-software.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Tableau</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">📱</div> -->
+								<img src="images/power_bi.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Power BI</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">🔒</div> -->
+								<img src="images/office.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">MS Office</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">🔒</div> -->
+								<img src="images/curve.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Statistics</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">🎨</div> -->
+								<img src="images/mathematic.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Mathematics</div>
+							</div>
+							<div class="skill-box">
+								<!-- <div class="skill-icon">🎨</div> -->
+								<img src="images/python.png" alt="Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+								<div class="skill-titles">Python</div>
+							</div>
+						</div>
+					</div>
+				 </div>
 
 				<!-- Contact -->
 					<section id="contact">
